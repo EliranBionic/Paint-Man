@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #fdf6e3;
+  text-align: center;
+}
+
+#titleContainer {
+  margin: 10px 0;
+}
+
+#rainbowText {
+  font-size: 2rem;
+  /* Smaller for mobile */
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 3s infinite linear;
+}
+
+hr {
+  border: 0;
+  height: 20px;
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  margin: 10px 0;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  /* Reduced spacing */
+  margin: 10px 0;
+}
+
+#colorContainer,
+#thicknessContainer {
+  display: flex;
+  gap: 5px;
+  /* Compact spacing */
+  justify-content: center;
+}
+
+button {
+  font-size: 1rem;
+  /* Smaller button size */
+  /* width: 30px; */
+  
+  
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  /* margin: 10px; */
+  cursor: pointer;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.black {
+
+  background-color: rgb(1, 1, 1);
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.magenta {
+  background-color: magenta;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.white {
+  background-color: white;
+}
+.orange {
+  background-color: #ffd700;
+}
+.purple {
+  background-color: purple;
+}
+#random{
+background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: #fdf6e3;
+font-weight: bolder;
+}
+
+canvas {
+  display: block;
+  margin: 10px auto;
+  border: 3px solid #333;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  max-width: 95%;
+  /* Scales to fit smaller screens */
+  height: auto;
+}
+
+span {
+  font-size: 1.2rem;
+  /* Adjust size for mobile */
+  padding: 5px 8px;
+  margin: 0 3px;
+  color: #444;
+  background-color: #ffd700;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-transform: capitalize;
+}
+
+.active {
+  box-shadow: 0 0 10px 2px #444 inset;
+}
+
+.erase {
+  background-color: #ff4444;
+  color: #fff;
+  font-weight: bold;
+}
+
+.erase:hover {
+  background-color: #cc0000;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src='./main.js'></script>
+</head>
+
+<body>
+
+    <div>
+        <h1><header> Paint page for kids</header></h1>
+    </div>
+
+    <div id="colorContainer">
+        <button onclick="changeColor('black')" class="black"></button>
+        <button onclick="changeColor('red')" class="red"></button>
+        <button onclick="changeColor('blue')" class="blue"></button>
+        <button onclick="changeColor('green')" class="green"></button>
+        <button onclick="changeColor('yellow')" class="yellow"></button>
+        <button onclick="changeColor('cyan')" class="cyan"></button>
+        <button onclick="changeColor('magenta')" class="magenta"></button>
+        <button onclick="changeColor('orange')" class="orange"></button>
+        <button onclick="changeColor('purple')" class="purple"></button>
+        <button onclick="getRandomColor()" id="random">?</button>
+        <input type="color" id="colorPicker" class="input" onchange="changeColor(this.value)">
+        <button onclick="changeColor('white')" class="white">Eraser</button>
+    </div>
+    <div id="thicknessContainer">
+        <button onclick="changeThickness(1)">Thin</button>
+        <button onclick="changeThickness(5)">Medium</button>
+        <button onclick="changeThickness(10)">Thick</button>
+        <button onclick="clearCanvas()">Clear</button>
+    </div>
+    <div id="canvasContainer">
+        <canvas id="myCanvas" width="1080" height="720" onmousedown="mark()" onmousemove="paint(event)"
+            onmouseenter="mark()"></canvas>
+    </div>
+
+</body>
+
+</html>
